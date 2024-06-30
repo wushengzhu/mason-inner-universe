@@ -11,8 +11,11 @@
     "prettier": "prettier --write src/**/*.{js,jsx,vue,ts,tsx}"
   },
   "dependencies": {
+    "dayjs": "^1.11.11",
     "element-plus": "^2.7.5",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
