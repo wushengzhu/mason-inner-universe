@@ -12,7 +12,7 @@ export default defineConfig({
     vue(),
     WindiCSS(),
     AutoImport({
-      resolvers: [ElementPlusResolver()]
+      resolvers: [ElementPlusResolver()],
     }),
     Components({
       resolvers: [ElementPlusResolver()]

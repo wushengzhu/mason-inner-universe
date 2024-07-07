@@ -9,15 +9,17 @@ const messages = {
     ...enLocale,
     ...elEnLocale
   },
-  'zh-cn': {
+  'zh-CN': {
     ...zhLocale,
     ...elZhLocale
   }
 }
 const i18n = createI18n({
-  locale: navigator.language.split('-')[0] || 'en', // 默认语言
+  // navigator.language.split('-')[0]取zh
+  locale: navigator.language || 'en', // 默认语言
   // fallbackLocale: 'en', // 备用语言
   messages,
 });
 
-export default i18n;
+export const i18nConfig = i18n.global
+export default i18n

@@ -1,14 +1,15 @@
 import { ref } from "vue"
-import i18n from "../lang"
+import { i18nConfig } from "../lang"
 
 
 
 const useLang = () => {
-  const locale = ref(i18n.locale.value as any)
+  console.log(i18nConfig.locale)
+  const locale = ref(i18nConfig.locale)
 
-  const changeLang = (newLocale: string) => {
+  const changeLang = (newLocale: 'en' | 'zh-CN') => {
     locale.value = newLocale;
-    i18n.locale.value = newLocale;
+    i18nConfig.locale = newLocale;
   }
 
   return {

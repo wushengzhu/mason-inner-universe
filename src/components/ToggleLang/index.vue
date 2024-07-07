@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import useLang from '../../hooks/useLang';
+import useDemo from '../../hooks/useDemo';
 
 
 const buttonType = reactive({
@@ -8,6 +9,7 @@ const buttonType = reactive({
   zh: 'default',
 })
 const { changeLang } = useLang()
+const {a} = useDemo()
 </script>
 
 <template>
