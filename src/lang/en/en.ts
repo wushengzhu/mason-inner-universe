@@ -3,5 +3,8 @@ export default {
     login: 'login',
     userName: 'userName',
     password: 'password'
+  },
+  register:{
+    register:'register',
   }
 };

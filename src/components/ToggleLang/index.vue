@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import useLang from '../../hooks/useLang';
-import useDemo from '../../hooks/useDemo';
+// import useDemo from '../../hooks/useDemo';
 
 
 const buttonType = reactive({
@@ -9,7 +9,7 @@ const buttonType = reactive({
   zh: 'default',
 })
 const { changeLang } = useLang()
-const {a} = useDemo()
+// const {a} = useDemo()
 </script>
 
 <template>
@@ -17,7 +17,7 @@ const {a} = useDemo()
     EN
   </el-button>
   <el-divider direction="vertical" />
-  <el-button :type="buttonType.zh" link @click="changeLang('zh-cn')">
+  <el-button :type="buttonType.zh" link @click="changeLang('zh-CN')">
     中
   </el-button>
 </template>

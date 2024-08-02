@@ -25,7 +25,7 @@ export default defineConfig({
   css:{
     preprocessorOptions:{
       scss:{
-        additionalData:'@import "@/styles/constant.scss"',//scss 常量加载到全局
+        // additionalData:'@import "@/styles/constant.scss"',//scss 常量加载到全局
       }
     }
   },
